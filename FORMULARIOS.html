@@ -4,49 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULARIOS</title>
-</head>
-<body>
-  
-   <form action="">
-        <label for="nombre">
-            Nombre(s)
-        </label>
-         <input type="text" name="nombre" id="nombre">
-        <br>
+    <style>
+        form{
+            color-scheme: rgb(167, 32, 32);
+            width: 40%;
+            height: 800px;
 
-        <label for="apellido">
-            Apellido(s)
-        </label>
-        <input type="text" name="apellido" id="apellido">
-        <br>
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+            border: 20px solid darkgray;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        label{
+            color: blueviolet;
+            font-size: 14px;
+
+            margin-bottom: 10px;
+        }
+
+        input{
+            background: rgb(138, 178, 202);
+            border-bottom: 3px solid rgb(206, 91, 91);
+            padding: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        .two-columns{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fields{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btns{
+            display: flex;
+            justify-content: center;
+        }
+
+        button{
+
+            padding: 15px 40px;
+            background: rgb(197, 81, 149);
+
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            color: white;
+            cursor: pointer;
+        
+        } 
+    </style>
+</head>
+
+<body>
+
+    <form action="">
 
         <label for="matricula">
             Matrícula
         </label>
         <input type="text" name="matricula" id="matricula">
-        <br>
-        <br>
 
-        <label for="">Búsqueda</label>
-        <input type="search">
-        <br>
-        <br> 
+        <div class="two-columns">
+            <div class="fields">
+                <label for="nombre">
+                    Nombre(s)
+                </label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
 
-        <label for="">Email</label>
-        <input type="email">
-        <br>
-        <br>
+            <div class="fields">
+                <label for="apellido">
+                    Apellido(s)
+                </label>
+                <input type="text" name="apellido" id="apellido">
+            </div>
+        </div>
 
-        <label for="">Campo de texto</label>
-        <textarea></textarea>
-        <br>
-        <br>
- 
-        <input type="submit" value="Guardar">
-        <input type="reset" value="Limpiar">
+        <div class="two-columns">
+            <div class="fields" >
+                <label for="">Búsqueda</label>
+                <input type="search">
+            </div>
+            <div class="fields">
+                <label for="">Email</label>
+                <input type="email">
+            </div>
+        </div>
+
+        <div class="fields">
+
+            <label for="">Password</label>
+            <input type="password">
+        
+            <label for="">Campo de texto</label>
+            <textarea></textarea>
+
+        </div>
+
+        <div class="btns">
+                <input type="submit" value="Guardar">
+                <input type="reset" value="Limpiar">
+        </div>
 
 
-   </form> 
+    </form> 
 
 </body>
 </html>
